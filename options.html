@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html> 
+  <head><title>World War II </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+      body {background-color: skyblue}
+      h1 {
+        width: 1000px;
+        font-size:50px;
+      }
+      .button {
+        height: 100px;
+        width: 1000px;
+        font-size: 30px;
+        font-family: sans-seriff;
+        margin-top: 40px;
+      }
+      #fra {
+          background-color: blue;
+        }
+      #s {
+          background-color: orange;
+        }
+      #u {
+          background-color: orangered;
+        }
+      #g {
+          background-color: darkred;
+        }
+      #i {
+          background-color: green;
+        }
+      .header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+  font-family: diary-angelique;
+        
+}
+    </style>
+
+  </head>
+  <body>
+    
+    
+    <center>
+      <div class="header" id="myHeader">
+        <h1> World War II </h1>
+</div>
+          <button class  = "btn btn-success button" onclick = "franc();" id = "fra">France </button>
+      
+      <button class  = "btn btn-success button" onclick = "sovie();" id = "s">Soviet Union </button>
+      
+      <button class  = "btn btn-success button" onclick = "unite();" id = "u">United States & Pacific</button>
+      <button class  = "btn btn-success button" onclick = "german();" id = "g">Germany </button>
+      <button class  = "btn btn-success button" onclick = "ital();" id = "i">Italy </button>
+     </center>
+  </body>
+  <script>
+    function franc(){
+        window.location = "france.html";
+    }
+    function sovie(){
+        window.location = "soviet_union.html";
+    }
+    function unite(){
+        window.location = "unitedstates.html";
+    }
+    function german(){
+        window.location = "germany.html";
+    }
+    function ital(){
+        window.location = "italy.html";
+    }
+  </script>
+
+ 
+</html>

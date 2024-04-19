@@ -1,0 +1,75 @@
+<html> 
+  <head><title>World War II </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+      body {background-color: skyblue}
+      h1 {
+        width: 1000px;
+        font-size:50px;
+      }
+      .button {
+        height: 100px;
+        width: 1000px;
+        font-size: 30px;
+        font-family: sans-seriff;
+      }
+      .header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+  font-family: diary-angelique;
+}
+      h2 {
+        margin-top: 10px;
+        font-family: garamond;
+      }
+      p {
+        margin-top: 30px;
+        font-size: 20px;
+        font-family: garamond;
+      }
+    </style>
+
+  </head>
+  <body>
+    
+    
+    <center>
+      <div class="header" id="myHeader">
+        <h1> World War II </h1>
+</div>
+      <h2 class = "infor" id = "infor"> World War II was an armed conflict between many powers across the world. After the Nazi election and overturn of the German Government, German figure Adolf Hitler came to power and invaded Poland, proceeding to invade more and more in the coming years. Parts of Europe are quickly taken over, and more fascists take on power. 
+   In the Pacific, Japan expanded its empire through all of its neighboring islands and bombeb Pearl Harbor, causing the United States to enter the war.
+   Millions of people were killed through the bombing, missiles, sieges, and horrible atrocities committed throughout the war, which is forever a mark upon the human race.
+</h2>
+      
+      <button class  = "btn btn-success button" onclick = "play();" id = "button1">Next</button>
+      
+      <p id= "p1">
+        Our website is merely an attempt to provide information about World War II. It is just a window's glance into the vast events of World War II. There are no intentional implications of promotions of any kind of ideals or justifications of any occurences. Any of such are purely coincidental.
+      </p>
+    </center>
+  </body>
+
+  <script>
+    function play(){
+  setTimeout(function(){document.getElementById('button1').innerHTML = "Loading..."}, 6000);
+    document.getElementById("button1").innerHTML = "Loading...";
+      document.getElementById("p1").innerHTML = "";
+      document.getElementById("infor").innerHTML = "";
+      navigate();
+    }
+    function navigate(){
+        setTimeout(function(){window.location = "options.html"}, 1000);
+    }
+
+    
+  </script>
+</html>
